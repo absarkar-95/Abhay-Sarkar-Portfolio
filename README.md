@@ -1,20 +1,17 @@
-# Abhay Sarkar — Portfolio
+# Abhay Sarkar — Portfolio Prototype 02
 
-First prototype of the horizontal motion-graphics portfolio.
+Second prototype of the horizontal motion-graphics portfolio.
+
+## What changed
+
+The playhead is now fixed at the centre of the viewport. The timeline moves underneath it, and the project closest to the playhead becomes active and expands.
 
 ## Files
 
-- `index.html` — page structure
-- `style.css` — visual design and responsive layout
-- `script.js` — horizontal timeline interaction
+- `index.html`
+- `style.css`
+- `script.js`
 
-## Next development stages
+## Next
 
-1. Replace placeholder project blocks with real work.
-2. Add project preview videos.
-3. Develop the timeline/playhead behavior further.
-4. Add project detail views.
-5. Build About, Experience and Contact sections.
-6. Optimize video loading and mobile behavior.
-7. Deploy with Cloudflare Pages.
-8. Connect `abhaysarkar.online`.
+Replace placeholder project cards with real thumbnails and video previews, then refine the timeline physics and project transitions before connecting the final domain.

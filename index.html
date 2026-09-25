@@ -3,83 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0b0b0b">
+  <meta name="theme-color" content="#090909">
   <title>Abhay Sarkar — Motion Graphics Designer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="site">
-    <header class="topbar">
-      <div class="brand">ABHAY SARKAR<span class="dot">.</span></div>
-      <div class="top-meta">MOTION / VISUALS / EXPERIMENTS</div>
-      <button class="menu-button" type="button" aria-label="Open information panel">INFO</button>
-    </header>
+<main class="site">
+  <header class="topbar">
+    <div class="brand">ABHAY SARKAR<span>.</span></div>
+    <div class="top-meta">MOTION / VISUALS / EXPERIMENTS</div>
+    <button class="menu-button" id="menuButton" type="button">INFO</button>
+  </header>
 
-    <section class="stage" aria-label="Portfolio preview">
-      <div class="stage-grid"></div>
-      <div class="stage-copy">
-        <p class="eyebrow">MOTION GRAPHICS DESIGNER</p>
-        <h1 id="stageTitle">SELECT A PROJECT</h1>
-        <p id="stageDescription">Scroll horizontally through the timeline below.</p>
-      </div>
-      <div class="stage-counter"><span id="counter">00</span> / 05</div>
-      <div class="stage-status"><span class="status-dot"></span><span id="statusText">READY</span></div>
-    </section>
+  <section class="stage">
+    <div class="grid"></div>
+    <div class="stage-noise"></div>
+    <div class="project-meta">
+      <div class="eyebrow">SELECTED WORK / <span id="projectIndex">01</span></div>
+      <h1 id="projectTitle">SPJ</h1>
+      <p id="projectDescription">AI driven brand film / motion design</p>
+      <div class="project-tags" id="projectTags">AI / MOTION / EDIT</div>
+    </div>
+    <div class="stage-side">
+      <div class="side-line"></div>
+      <span id="stageType">BRAND FILM</span>
+    </div>
+    <div class="stage-counter"><strong id="counter">01</strong><span> / 05</span></div>
+    <div class="status"><i></i><span id="statusText">PLAYHEAD READY</span></div>
+  </section>
 
-    <section class="timeline-wrap" aria-label="Project timeline">
-      <div class="timeline-head">
-        <span>TIMELINE</span>
-        <span id="timecode">00:00:00:00</span>
-      </div>
+  <section class="timeline-shell">
+    <div class="timeline-header">
+      <span>TIMELINE / SELECTED WORK</span>
+      <span id="timecode">00:00:00:00</span>
+    </div>
 
-      <div class="timeline-viewport" id="timelineViewport" tabindex="0" aria-label="Horizontal project timeline. Use mouse wheel, shift-wheel, trackpad, or arrow keys.">
-        <div class="timeline">
-          <div class="track-labels" aria-hidden="true">
+    <div class="timeline-viewport" id="timelineViewport" tabindex="0" aria-label="Horizontal portfolio timeline">
+      <div class="timeline-content" id="timelineContent">
+        <div class="ruler" id="ruler"></div>
+        <div class="track-area">
+          <div class="track-labels">
             <div>MASTER</div>
             <div>PROJECT</div>
             <div>MEDIA</div>
           </div>
-
-          <div class="tracks" id="tracks">
-            <div class="track master-track">
-              <div class="track-line"></div>
-              <div class="markers" id="markers"></div>
-            </div>
+          <div class="tracks">
+            <div class="track master"></div>
             <div class="track project-track" id="projectTrack"></div>
-            <div class="track media-track">
-              <div class="media-line"></div>
-            </div>
-          </div>
-
-          <div class="playhead" id="playhead" aria-hidden="true">
-            <div class="playhead-cap"></div>
-            <div class="playhead-line"></div>
+            <div class="track media"></div>
           </div>
         </div>
       </div>
-
-      <div class="timeline-foot">
-        <span>SCROLL TO SCRUB</span>
-        <span>← / → TO NAVIGATE</span>
+      <div class="fixed-playhead" aria-hidden="true">
+        <div class="playhead-cap"></div>
+        <div class="playhead-line"></div>
       </div>
-    </section>
+      <div class="center-marker" aria-hidden="true"></div>
+    </div>
 
-    <footer class="footer">
-      <span>© <span id="year"></span> ABHAY SARKAR</span>
-      <span>NEW DELHI / INDIA</span>
-      <span>PORTFOLIO PROTOTYPE 01</span>
-    </footer>
+    <div class="timeline-footer">
+      <span>SCROLL TO SCRUB</span>
+      <span>← / → NAVIGATE</span>
+      <span id="position">00%</span>
+    </div>
+  </section>
 
-    <aside class="info-panel" id="infoPanel" aria-hidden="true">
-      <button class="close-button" id="closeInfo" type="button" aria-label="Close information panel">×</button>
-      <p class="eyebrow">ABOUT</p>
-      <h2>Creative professional specializing in Motion Graphics, Video Editing and Visual Design.</h2>
-      <p>Currently leading a creative team while exploring AI driven workflows and end to end visual production.</p>
-      <div class="info-links">
-        <span>EMAIL</span><span>LINKEDIN</span><span>INSTAGRAM</span>
-      </div>
-    </aside>
-  </main>
-  <script src="script.js"></script>
+  <footer class="footer">
+    <span>© <span id="year"></span> ABHAY SARKAR</span>
+    <span>NEW DELHI / INDIA</span>
+    <span>PORTFOLIO PROTOTYPE 02</span>
+  </footer>
+
+  <aside class="info-panel" id="infoPanel" aria-hidden="true">
+    <button class="close-button" id="closeInfo" type="button" aria-label="Close">×</button>
+    <p class="eyebrow">ABOUT ABHAY SARKAR</p>
+    <h2>Motion Graphics Designer<br>Visual Designer<br>Photographer</h2>
+    <p>Creative professional specializing in Motion Graphics, Video Editing and Visual Design, with experience across agencies, corporate teams and diverse brands.</p>
+    <p>Currently leading a creative team while exploring AI driven workflows and end to end visual production.</p>
+    <div class="info-links">
+      <span>EMAIL</span><span>LINKEDIN</span><span>INSTAGRAM</span>
+    </div>
+  </aside>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
