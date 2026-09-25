@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0b">
+  <title>Abhay Sarkar — Motion Graphics Designer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="site">
+    <header class="topbar">
+      <div class="brand">ABHAY SARKAR<span class="dot">.</span></div>
+      <div class="top-meta">MOTION / VISUALS / EXPERIMENTS</div>
+      <button class="menu-button" type="button" aria-label="Open information panel">INFO</button>
+    </header>
+
+    <section class="stage" aria-label="Portfolio preview">
+      <div class="stage-grid"></div>
+      <div class="stage-copy">
+        <p class="eyebrow">MOTION GRAPHICS DESIGNER</p>
+        <h1 id="stageTitle">SELECT A PROJECT</h1>
+        <p id="stageDescription">Scroll horizontally through the timeline below.</p>
+      </div>
+      <div class="stage-counter"><span id="counter">00</span> / 05</div>
+      <div class="stage-status"><span class="status-dot"></span><span id="statusText">READY</span></div>
+    </section>
+
+    <section class="timeline-wrap" aria-label="Project timeline">
+      <div class="timeline-head">
+        <span>TIMELINE</span>
+        <span id="timecode">00:00:00:00</span>
+      </div>
+
+      <div class="timeline-viewport" id="timelineViewport" tabindex="0" aria-label="Horizontal project timeline. Use mouse wheel, shift-wheel, trackpad, or arrow keys.">
+        <div class="timeline">
+          <div class="track-labels" aria-hidden="true">
+            <div>MASTER</div>
+            <div>PROJECT</div>
+            <div>MEDIA</div>
+          </div>
+
+          <div class="tracks" id="tracks">
+            <div class="track master-track">
+              <div class="track-line"></div>
+              <div class="markers" id="markers"></div>
+            </div>
+            <div class="track project-track" id="projectTrack"></div>
+            <div class="track media-track">
+              <div class="media-line"></div>
+            </div>
+          </div>
+
+          <div class="playhead" id="playhead" aria-hidden="true">
+            <div class="playhead-cap"></div>
+            <div class="playhead-line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-foot">
+        <span>SCROLL TO SCRUB</span>
+        <span>← / → TO NAVIGATE</span>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> ABHAY SARKAR</span>
+      <span>NEW DELHI / INDIA</span>
+      <span>PORTFOLIO PROTOTYPE 01</span>
+    </footer>
+
+    <aside class="info-panel" id="infoPanel" aria-hidden="true">
+      <button class="close-button" id="closeInfo" type="button" aria-label="Close information panel">×</button>
+      <p class="eyebrow">ABOUT</p>
+      <h2>Creative professional specializing in Motion Graphics, Video Editing and Visual Design.</h2>
+      <p>Currently leading a creative team while exploring AI driven workflows and end to end visual production.</p>
+      <div class="info-links">
+        <span>EMAIL</span><span>LINKEDIN</span><span>INSTAGRAM</span>
+      </div>
+    </aside>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
