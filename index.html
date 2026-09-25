@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#090909">
-  <title>Abhay Sarkar — Motion Graphics Designer</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080808">
+<title>Abhay Sarkar — Motion Graphics Designer</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main class="site">
@@ -17,19 +17,19 @@
 
   <section class="stage">
     <div class="grid"></div>
-    <div class="stage-noise"></div>
+    <div class="stage-glow"></div>
     <div class="project-meta">
-      <div class="eyebrow">SELECTED WORK / <span id="projectIndex">01</span></div>
+      <p class="eyebrow">SELECTED WORK / <span id="projectIndex">01</span></p>
       <h1 id="projectTitle">SPJ</h1>
       <p id="projectDescription">AI driven brand film / motion design</p>
       <div class="project-tags" id="projectTags">AI / MOTION / EDIT</div>
     </div>
     <div class="stage-side">
-      <div class="side-line"></div>
       <span id="stageType">BRAND FILM</span>
+      <span class="side-line"></span>
     </div>
     <div class="stage-counter"><strong id="counter">01</strong><span> / 05</span></div>
-    <div class="status"><i></i><span id="statusText">PLAYHEAD READY</span></div>
+    <div class="status"><i></i><span id="statusText">PLAYHEAD / 01</span></div>
   </section>
 
   <section class="timeline-shell">
@@ -38,27 +38,30 @@
       <span id="timecode">00:00:00:00</span>
     </div>
 
-    <div class="timeline-viewport" id="timelineViewport" tabindex="0" aria-label="Horizontal portfolio timeline">
+    <div class="timeline-viewport" id="timelineViewport" tabindex="0"
+         aria-label="Horizontal portfolio timeline. Scroll horizontally or use the arrow keys.">
       <div class="timeline-content" id="timelineContent">
-        <div class="ruler" id="ruler"></div>
-        <div class="track-area">
-          <div class="track-labels">
+        <div class="time-ruler" id="timeRuler"></div>
+
+        <div class="timeline-body">
+          <div class="track-labels" aria-hidden="true">
             <div>MASTER</div>
             <div>PROJECT</div>
             <div>MEDIA</div>
           </div>
+
           <div class="tracks">
-            <div class="track master"></div>
+            <div class="track master-track"></div>
             <div class="track project-track" id="projectTrack"></div>
-            <div class="track media"></div>
+            <div class="track media-track"></div>
           </div>
         </div>
       </div>
+
       <div class="fixed-playhead" aria-hidden="true">
         <div class="playhead-cap"></div>
-        <div class="playhead-line"></div>
+        <div class="playhead-stem"></div>
       </div>
-      <div class="center-marker" aria-hidden="true"></div>
     </div>
 
     <div class="timeline-footer">
@@ -71,18 +74,16 @@
   <footer class="footer">
     <span>© <span id="year"></span> ABHAY SARKAR</span>
     <span>NEW DELHI / INDIA</span>
-    <span>PORTFOLIO PROTOTYPE 02</span>
+    <span>PORTFOLIO PROTOTYPE 03</span>
   </footer>
 
   <aside class="info-panel" id="infoPanel" aria-hidden="true">
-    <button class="close-button" id="closeInfo" type="button" aria-label="Close">×</button>
+    <button class="close-button" id="closeInfo" type="button">×</button>
     <p class="eyebrow">ABOUT ABHAY SARKAR</p>
     <h2>Motion Graphics Designer<br>Visual Designer<br>Photographer</h2>
     <p>Creative professional specializing in Motion Graphics, Video Editing and Visual Design, with experience across agencies, corporate teams and diverse brands.</p>
     <p>Currently leading a creative team while exploring AI driven workflows and end to end visual production.</p>
-    <div class="info-links">
-      <span>EMAIL</span><span>LINKEDIN</span><span>INSTAGRAM</span>
-    </div>
+    <div class="info-links"><span>EMAIL</span><span>LINKEDIN</span><span>INSTAGRAM</span></div>
   </aside>
 </main>
 <script src="script.js"></script>

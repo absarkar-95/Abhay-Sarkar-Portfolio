@@ -1,17 +1,14 @@
-# Abhay Sarkar — Portfolio Prototype 02
+# Abhay Sarkar — Portfolio Prototype 03
 
-Second prototype of the horizontal motion-graphics portfolio.
+This version establishes the timeline as a continuous editing-style interface.
 
-## What changed
+Key changes:
+- Fixed playhead begins at the time ruler and extends through MASTER, PROJECT and MEDIA.
+- Continuous time ruler with labels.
+- Project blocks live on a single project track.
+- Timeline content moves underneath the fixed playhead.
+- The project nearest the playhead becomes active and expands.
+- Timecode and position update with the scrub position.
+- Beginning/end padding lets the first and last projects reach the centre playhead.
 
-The playhead is now fixed at the centre of the viewport. The timeline moves underneath it, and the project closest to the playhead becomes active and expands.
-
-## Files
-
-- `index.html`
-- `style.css`
-- `script.js`
-
-## Next
-
-Replace placeholder project cards with real thumbnails and video previews, then refine the timeline physics and project transitions before connecting the final domain.
+Next: replace placeholder blocks with real project thumbnails, video previews and project detail interactions.
